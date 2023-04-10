@@ -8,7 +8,7 @@ import 'screens/quiz_screen3.dart';
 import 'screens/vr_screen1.dart';
 import 'screens/recommended_vr_environments.dart';
 
-//HI KRITIKA I AM PRAJNA
+//HI KRITIKA I AM PRAJNA hi
 void main() {
   runApp(MaterialApp(
     home: Home(),
