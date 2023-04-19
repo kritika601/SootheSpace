@@ -6,7 +6,6 @@ import 'package:soothe_space/screens/vr_screen1.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
-
   @override
   State<Home> createState() => _HomeState();
 }
