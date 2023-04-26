@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:soothe_space/other/navigation_bar.dart';
 import 'package:soothe_space/screens/quiz_screen1.dart';
 import 'package:soothe_space/screens/recommended_vr_environments.dart';
 import 'screens/main_home_screen.dart';
@@ -11,6 +12,6 @@ import 'screens/recommended_vr_environments.dart';
 //HI its prajna this side
 void main() {
   runApp(MaterialApp(
-    home: Home(),
+    home: bottom_navigation(),
   ));
 }

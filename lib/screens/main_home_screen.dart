@@ -1,6 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:soothe_space/screens/profile_screen.dart';
 import 'package:soothe_space/screens/quiz_screen1.dart';
+import 'package:soothe_space/screens/recommended_vr_environments.dart';
+import 'package:soothe_space/screens/main_home_screen.dart';
+import 'package:soothe_space/screens/expert_screen.dart';
+import 'package:soothe_space/screens/quiz_screen2.dart';
+import 'package:soothe_space/screens/quiz_screen3.dart';
+import 'package:soothe_space/screens/resources_screen.dart';
 import 'package:soothe_space/screens/vr_screen1.dart';
+import 'package:soothe_space/other/navigation_bar.dart';
 
 
 
@@ -14,6 +22,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       appBar: AppBar(
         backgroundColor: const Color.fromRGBO(191, 186, 255, 100),
         title: Text(
@@ -26,7 +35,7 @@ class _HomeState extends State<Home> {
         centerTitle: true,
       ),
 
-      body: Column(
+      body: ListView(
         // mainAxisAlignment: MainAxisAlignment.center,
         // crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
@@ -41,15 +50,15 @@ class _HomeState extends State<Home> {
                     top:150,
                     left:25,
                     child: ElevatedButton(
-                      onPressed: (){
-                      },
+                        onPressed: (){
 
-                      style: ElevatedButton.styleFrom(
-                        primary: Color.fromRGBO(191, 186, 255, 100),
-                      ),
-                      child: Image(
-                        image: AssetImage('assets/buttons/Smiley.png'),
-                      )
+                        },
+                        style: ElevatedButton.styleFrom(
+                          primary: Color.fromRGBO(191, 186, 255, 100),
+                        ),
+                        child: Image(
+                          image: AssetImage('assets/buttons/Smiley.png'),
+                        )
                     )
                   ),
 
@@ -245,57 +254,61 @@ class _HomeState extends State<Home> {
           ),
 
 
-          Center(
-            child: Stack(
-              children: <Widget>[
-                Image.asset('assets/images/ChooseQuizImage.png'),
-                Positioned(
-                    top: 100,
-                    right: 15,
-                    child: IconButton(
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context)=> quiz1(),)
-                        );
-                      },
-                      icon: Icon(
-                        Icons.arrow_forward_outlined,
-                        size: 40,
-                        color: Color.fromRGBO(191, 186, 255, 1),
-                      ),
-                    ))
-              ],
-            )
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          Center(
+          Padding(
+            padding: const EdgeInsets.fromLTRB(20, 20, 20, 0),
+            child: Center(
               child: Stack(
                 children: <Widget>[
-                  Image.asset('assets/images/ChooseVRImage.png'),
+                  Image.asset('assets/images/ChooseQuizImage.png'),
                   Positioned(
                       top: 100,
                       right: 15,
                       child: IconButton(
-                          onPressed: () {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(builder: (context)=> vr1(),)
-                            );
-                          },
-                          icon: Icon(
-                            Icons.arrow_forward_outlined,
-                            size: 40,
-                              color: Color.fromRGBO(191, 186, 255, 1),
-                          ),
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context)=> quiz1(),)
+                          );
+                        },
+                        icon: Icon(
+                          Icons.arrow_forward_outlined,
+                          size: 40,
+                          color: Color.fromRGBO(191, 186, 255, 1),
+                        ),
                       ))
                 ],
               )
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: Center(
+                child: Stack(
+                  children: <Widget>[
+                    Image.asset('assets/images/ChooseVRImage.png'),
+                    Positioned(
+                        top: 100,
+                        right: 15,
+                        child: IconButton(
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context)=> vr1(),)
+                              );
+                            },
+                            icon: Icon(
+                              Icons.arrow_forward_outlined,
+                              size: 40,
+                                color: Color.fromRGBO(191, 186, 255, 1),
+                            ),
+                        ))
+                  ],
+                )
+            ),
           )
         ],
-      )
+
+      ),
     );
   }
 }
