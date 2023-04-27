@@ -31,7 +31,10 @@ dependencies:
 
   flutter:
     sdk: flutter
-  persistent_bottom_nav_bar: any
+  custom_navigation_bar: ^0.8.2
+  custom_navigator: ^0.3.0
+  flutter_native_splash: ^2.2.19
+  ar_flutter_plugin:
 
 
 
@@ -45,6 +48,13 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+flutter_native_splash:
+  color: "BFBAFF"
+  image: assets/images/SootheSpaceLogo.png
+
+  android_12:
+    image: assets/images/SootheSpaceLogo.png
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -83,6 +93,7 @@ flutter:
     - assets/images/img9.png
     - assets/images/img10.png
     - assets/images/img11.png
+    - assets/trees.gltf
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 

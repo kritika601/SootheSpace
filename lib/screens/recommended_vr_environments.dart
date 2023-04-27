@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:soothe_space/screens/ar_screen.dart';
 import 'package:soothe_space/screens/main_home_screen.dart';
 import 'package:soothe_space/screens/quiz_screen1.dart';
 import 'package:soothe_space/screens/quiz_screen2.dart';
 import 'package:soothe_space/screens/quiz_screen3.dart';
+import 'package:soothe_space/screens/ar_screen.dart';
 
 class vrenvironments extends StatefulWidget {
   const vrenvironments({Key? key}) : super(key: key);
@@ -105,7 +107,12 @@ class _vrenvironmentsState extends State<vrenvironments> {
                   top: 150,
                   left: 15,
                   child: IconButton(
-                    onPressed: () { },
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context)=> ar(),)
+                      );
+                    },
                     icon: Image.asset('assets/images/img7.png'),
                     iconSize: 330,
                   )

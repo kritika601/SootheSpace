@@ -8,7 +8,6 @@ import 'package:soothe_space/screens/quiz_screen2.dart';
 import 'package:soothe_space/screens/quiz_screen3.dart';
 import 'package:soothe_space/screens/resources_screen.dart';
 import 'package:soothe_space/screens/vr_screen1.dart';
-import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
 class bottom_navigation extends StatefulWidget {
   const bottom_navigation({Key? key}) : super(key: key);
