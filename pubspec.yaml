@@ -94,6 +94,9 @@ flutter:
     - assets/images/img10.png
     - assets/images/img11.png
     - assets/trees.gltf
+    - assets/images/img12.png
+    - assets/images/img13.png
+    - assets/images/img14.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
