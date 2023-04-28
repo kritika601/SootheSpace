@@ -97,15 +97,15 @@ class _vrenvironmentsState extends State<vrenvironments> {
       ),
       body: Padding(
         padding: const EdgeInsets.all(20.0),
-        child: Column(
+        child: ListView(
           children: <Widget>[
             Center(
             child: Stack(
             children: <Widget>[
               Image.asset('assets/images/img9.png'),
               Positioned(
-                  top: 150,
-                  left: 15,
+                  top: 130,
+                  left: 1,
                   child: IconButton(
                     onPressed: () {
                       Navigator.push(
@@ -119,8 +119,8 @@ class _vrenvironmentsState extends State<vrenvironments> {
               ),
 
               Positioned(
-                  top: 300,
-                  left: 15,
+                  top: 270,
+                  left: 1,
                   child: IconButton(
                     onPressed: () { },
                     icon: Image.asset('assets/images/img8.png'),

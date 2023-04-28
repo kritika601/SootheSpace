@@ -54,8 +54,8 @@ class _quiz2State extends State<quiz2> {
                             children: <Widget>[
                               Image.asset('assets/images/img4.png'),
                               Positioned(
-                                top:70,
-                                right:95,
+                                top:60,
+                                right:75,
                                 child: ElevatedButton(
                                   onPressed: () {},
                                   style: ElevatedButton.styleFrom(
@@ -72,8 +72,8 @@ class _quiz2State extends State<quiz2> {
                                 ),
                               ),
                               Positioned(
-                                top:125,
-                                right:95,
+                                top:110,
+                                right:75,
                                 child: ElevatedButton(
                                   onPressed: () {},
                                   style: ElevatedButton.styleFrom(
@@ -89,8 +89,8 @@ class _quiz2State extends State<quiz2> {
                                 ),
                               ),
                               Positioned(
-                                top:180,
-                                right:95,
+                                top:160,
+                                right:75,
                                 child: ElevatedButton(
                                   onPressed: () {},
                                   style: ElevatedButton.styleFrom(
@@ -106,8 +106,8 @@ class _quiz2State extends State<quiz2> {
                                 ),
                               ),
                               Positioned(
-                                top:235,
-                                right:95,
+                                top:210,
+                                right:75,
                                 child: ElevatedButton(
                                   onPressed: () {},
                                   style: ElevatedButton.styleFrom(
@@ -131,8 +131,8 @@ class _quiz2State extends State<quiz2> {
                             children:<Widget>[
                               Image.asset('assets/images/img6.png'),
                               Positioned(
-                                top:95,
-                                right:95,
+                                top:85,
+                                right:75,
                                 child: ElevatedButton(
                                   onPressed: () {},
                                   style: ElevatedButton.styleFrom(
@@ -149,8 +149,8 @@ class _quiz2State extends State<quiz2> {
                                 ),
                               ),
                               Positioned(
-                                top:150,
-                                right:95,
+                                top:135,
+                                right:75,
                                 child: ElevatedButton(
                                   onPressed: () {},
                                   style: ElevatedButton.styleFrom(
@@ -166,8 +166,8 @@ class _quiz2State extends State<quiz2> {
                                 ),
                               ),
                               Positioned(
-                                top:205,
-                                right:95,
+                                top:185,
+                                right:75,
                                 child: ElevatedButton(
                                   onPressed: () {},
                                   style: ElevatedButton.styleFrom(
@@ -183,8 +183,8 @@ class _quiz2State extends State<quiz2> {
                                 ),
                               ),
                               Positioned(
-                                top:260,
-                                right:95,
+                                top:235,
+                                right:75,
                                 child: ElevatedButton(
                                   onPressed: () {},
                                   style: ElevatedButton.styleFrom(

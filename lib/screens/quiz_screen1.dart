@@ -118,8 +118,8 @@ class _quiz1State extends State<quiz1> {
                             children: <Widget>[
                               Image.asset('assets/images/img3.png'),
                               Positioned(
-                                top:185,
-                                right:95,
+                                top:170,
+                                right:74,
                                 child: ElevatedButton(
                                   onPressed: (){
                                     Navigator.push(
