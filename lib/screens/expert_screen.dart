@@ -49,6 +49,36 @@ class _ExpertsState extends State<Experts> {
                               icon: Image.asset('assets/images/img14.png'),
                               iconSize: 330,
                             )
+                        ),
+
+                        Positioned(
+                            top: 265,
+                            left: 5,
+                            child: IconButton(
+                              onPressed: () { },
+                              icon: Image.asset('assets/images/img15.png'),
+                              iconSize: 330,
+                            )
+                        ),
+
+                        Positioned(
+                            top: 375,
+                            left: 5,
+                            child: IconButton(
+                              onPressed: () { },
+                              icon: Image.asset('assets/images/img16.png'),
+                              iconSize: 330,
+                            )
+                        ),
+
+                        Positioned(
+                            top: 485,
+                            left: 5,
+                            child: IconButton(
+                              onPressed: () { },
+                              icon: Image.asset('assets/images/img17.png'),
+                              iconSize: 330,
+                            )
                         )
                       ]
                   )
