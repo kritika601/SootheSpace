@@ -8,6 +8,8 @@ import 'screens/quiz_screen2.dart';
 import 'screens/quiz_screen3.dart';
 import 'screens/vr_screen1.dart';
 import 'screens/recommended_vr_environments.dart';
+import 'screens/expert_screen.dart';
+import 'screens/resources_screen.dart';
 
 
 void main() {

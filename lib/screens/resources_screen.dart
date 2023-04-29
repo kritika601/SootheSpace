@@ -48,8 +48,8 @@ class _ResourcesState extends State<Resources> {
 
                         //books button
                         Positioned(
-                            top:230,
-                            left: 25,
+                            top:187,
+                            left: 30,
                             child: ElevatedButton(
                                 onPressed: (){
                                 },
@@ -71,8 +71,8 @@ class _ResourcesState extends State<Resources> {
 
                         // Podcasts button
                         Positioned(
-                            top:230,
-                            left: 120,
+                            top:187,
+                            left: 125,
                             child: ElevatedButton(
                                 onPressed: (){
                                 },
@@ -94,8 +94,8 @@ class _ResourcesState extends State<Resources> {
 
                         //Videos button
                         Positioned(
-                            top:230,
-                            left: 200,
+                            top:187,
+                            left: 245,
                             child: ElevatedButton(
                                 onPressed: (){
                                 },
@@ -117,58 +117,50 @@ class _ResourcesState extends State<Resources> {
 
 
                         Positioned(
-                            top: 45,
-                            left: 5,
+                            top: 130,
+                            left: 12,
                             child: IconButton(
                               onPressed: () { },
                               icon: Image.asset('assets/images/img19.png'),
-                              iconSize: 330,
+                              iconSize: 320,
                             )
                         ),
 
 
                         Positioned(
-                            top: 155,
-                            left: 5,
+                            top: 260,
+                            left: 12,
                             child: IconButton(
                               onPressed: () { },
                               icon: Image.asset('assets/images/img20.png'),
-                              iconSize: 330,
+                              iconSize: 320,
                             )
                         ),
 
-                        Positioned(
-                            top: 265,
-                            left: 5,
-                            child: IconButton(
-                              onPressed: () { },
-                              icon: Image.asset('assets/images/img21.png'),
-                              iconSize: 330,
-                            )
-                        ),
+
 
                         Positioned(
-                            top: 375,
-                            left: 5,
+                            top: 390,
+                            left: 12,
                             child: IconButton(
                               onPressed: () { },
                               icon: Image.asset('assets/images/img22.png'),
-                              iconSize: 330,
+                              iconSize: 320,
                             )
                         ),
 
                         Positioned(
-                            top: 485,
-                            left: 5,
+                            top: 520,
+                            left: 12,
                             child: IconButton(
                               onPressed: () { },
                               icon: Image.asset('assets/images/img23.png'),
-                              iconSize: 330,
+                              iconSize: 320,
                             )
                         ),
 
                         Positioned(
-                            top: 595,
+                            top: 680,
                             left: 5,
                             child: IconButton(
                               onPressed: () { },
