@@ -101,6 +101,14 @@ flutter:
     - assets/images/img16.png
     - assets/images/img17.png
     - assets/dog.gltf
+    - assets/images/img18.png
+    - assets/images/img19.png
+    - assets/images/img20.png
+    - assets/images/img21.png
+    - assets/images/img22.png
+    - assets/images/img23.png
+    - assets/images/img24.png
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
