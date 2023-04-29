@@ -100,7 +100,7 @@ class _arState extends State<ar> {
     }
     else {
       var newNode = ARNode(
-          type: NodeType.fileSystemAppFolderGLTF2, uri: "assets/trees.gltf");
+          type: NodeType.fileSystemAppFolderGLTF2, uri: "assets/dog.gltf");
 
       bool? didAddLocalNode = await arObjectManager.addNode(newNode);
       if (didAddLocalNode!) {
