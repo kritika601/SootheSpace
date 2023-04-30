@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:soothe_space/screens/main_home_screen.dart';
-import 'package:soothe_space/screens/resources_podcasts.dart';
+import 'package:soothe_space/screens/resources_screen.dart';
 
-class Resources extends StatefulWidget {
-  const Resources({Key? key}) : super(key: key);
+class podcasts extends StatefulWidget {
+  const podcasts({Key? key}) : super(key: key);
 
   @override
-  State<Resources> createState() => _ResourcesState();
+  State<podcasts> createState() => _podcastsState();
 }
 
-class _ResourcesState extends State<Resources> {
+class _podcastsState extends State<podcasts> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -53,9 +53,13 @@ class _ResourcesState extends State<Resources> {
                             left: 30,
                             child: ElevatedButton(
                                 onPressed: (){
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => Resources(),)
+                                  );
                                 },
                                 style: ElevatedButton.styleFrom(
-                                  primary: Colors.purple,
+                                  primary: Color.fromRGBO(191, 186, 255, 100),
                                   elevation: 3,
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(32),
@@ -65,7 +69,7 @@ class _ResourcesState extends State<Resources> {
                                 child: Text(
                                   "Books",
                                   style: TextStyle(
-                                      fontFamily: 'Poppins')
+                                      fontFamily: 'Poppins'),
                                 )
                             )
                         ),
@@ -76,13 +80,9 @@ class _ResourcesState extends State<Resources> {
                             left: 125,
                             child: ElevatedButton(
                                 onPressed: (){
-                                  Navigator.push(
-                                    context,
-                                    MaterialPageRoute(builder: (context) => podcasts(),)
-                                  );
                                 },
                                 style: ElevatedButton.styleFrom(
-                                  primary: Color.fromRGBO(191, 186, 255, 100),
+                                  primary: Colors.purple,
                                   elevation: 3,
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(32),
@@ -126,7 +126,7 @@ class _ResourcesState extends State<Resources> {
                             left: 12,
                             child: IconButton(
                               onPressed: () { },
-                              icon: Image.asset('assets/images/img19.png'),
+                              icon: Image.asset('assets/images/img25.png'),
                               iconSize: 320,
                             )
                         ),
@@ -137,19 +137,17 @@ class _ResourcesState extends State<Resources> {
                             left: 12,
                             child: IconButton(
                               onPressed: () { },
-                              icon: Image.asset('assets/images/img20.png'),
+                              icon: Image.asset('assets/images/img26.png'),
                               iconSize: 320,
                             )
                         ),
-
-
 
                         Positioned(
                             top: 390,
                             left: 12,
                             child: IconButton(
                               onPressed: () { },
-                              icon: Image.asset('assets/images/img22.png'),
+                              icon: Image.asset('assets/images/img27.png'),
                               iconSize: 320,
                             )
                         ),
@@ -159,18 +157,18 @@ class _ResourcesState extends State<Resources> {
                             left: 12,
                             child: IconButton(
                               onPressed: () { },
-                              icon: Image.asset('assets/images/img23.png'),
+                              icon: Image.asset('assets/images/28.png'),
                               iconSize: 320,
                             )
                         ),
 
                         Positioned(
                             top: 680,
-                            left: 12,
+                            left: 5,
                             child: IconButton(
                               onPressed: () { },
-                              icon: Image.asset('assets/images/img24.png'),
-                              iconSize: 320,
+                              icon: Image.asset('assets/images/img29.png'),
+                              iconSize: 330,
                             )
                         )
                       ]
