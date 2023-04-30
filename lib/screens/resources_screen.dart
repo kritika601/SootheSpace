@@ -75,12 +75,7 @@ class _ResourcesState extends State<Resources> {
                             top:187,
                             left: 125,
                             child: ElevatedButton(
-                                onPressed: (){
-                                  Navigator.push(
-                                    context,
-                                    MaterialPageRoute(builder: (context) => podcasts(),)
-                                  );
-                                },
+                                onPressed: (){ },
                                 style: ElevatedButton.styleFrom(
                                   primary: Color.fromRGBO(191, 186, 255, 100),
                                   elevation: 3,
@@ -125,7 +120,12 @@ class _ResourcesState extends State<Resources> {
                             top: 130,
                             left: 12,
                             child: IconButton(
-                              onPressed: () { },
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(builder: (context) => podcasts(),)
+                                );  //jugaad only
+                              },
                               icon: Image.asset('assets/images/img19.png'),
                               iconSize: 320,
                             )

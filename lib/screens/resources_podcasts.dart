@@ -53,10 +53,7 @@ class _podcastsState extends State<podcasts> {
                             left: 30,
                             child: ElevatedButton(
                                 onPressed: (){
-                                  Navigator.push(
-                                      context,
-                                      MaterialPageRoute(builder: (context) => Resources(),)
-                                  );
+
                                 },
                                 style: ElevatedButton.styleFrom(
                                   primary: Color.fromRGBO(191, 186, 255, 100),
@@ -122,10 +119,15 @@ class _podcastsState extends State<podcasts> {
 
 
                         Positioned(
-                            top: 130,
-                            left: 12,
+                            top: 120,
+                            left: 10,
                             child: IconButton(
-                              onPressed: () { },
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(builder: (context) => Resources(),)
+                                );  //jugaad only
+                              },
                               icon: Image.asset('assets/images/img25.png'),
                               iconSize: 320,
                             )
@@ -133,8 +135,8 @@ class _podcastsState extends State<podcasts> {
 
 
                         Positioned(
-                            top: 260,
-                            left: 12,
+                            top: 220,
+                            left: 10,
                             child: IconButton(
                               onPressed: () { },
                               icon: Image.asset('assets/images/img26.png'),
@@ -143,8 +145,8 @@ class _podcastsState extends State<podcasts> {
                         ),
 
                         Positioned(
-                            top: 390,
-                            left: 12,
+                            top: 320,
+                            left: 10,
                             child: IconButton(
                               onPressed: () { },
                               icon: Image.asset('assets/images/img27.png'),
@@ -153,22 +155,22 @@ class _podcastsState extends State<podcasts> {
                         ),
 
                         Positioned(
-                            top: 520,
-                            left: 12,
+                            top: 420,
+                            left: 10,
                             child: IconButton(
                               onPressed: () { },
-                              icon: Image.asset('assets/images/28.png'),
+                              icon: Image.asset('assets/images/img28.png'),
                               iconSize: 320,
                             )
                         ),
 
                         Positioned(
-                            top: 680,
-                            left: 5,
+                            top: 520,
+                            left: 10,
                             child: IconButton(
                               onPressed: () { },
                               icon: Image.asset('assets/images/img29.png'),
-                              iconSize: 330,
+                              iconSize: 320,
                             )
                         )
                       ]
