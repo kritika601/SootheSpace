@@ -26,7 +26,7 @@ class _ResourcesState extends State<Resources> {
           onPressed: () {
             Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context)=> Home(),)
+                MaterialPageRoute(builder: (context)=> podcasts(),)
             );
           },
           icon: Icon(
@@ -78,7 +78,7 @@ class _ResourcesState extends State<Resources> {
                                 onPressed: (){
                                   Navigator.push(
                                     context,
-                                    MaterialPageRoute(builder: (context) => podcasts(),)
+                                    MaterialPageRoute(builder: (context) => Home(),)
                                   );
                                 },
                                 style: ElevatedButton.styleFrom(
