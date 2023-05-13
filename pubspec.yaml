@@ -29,6 +29,7 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
 
+
   flutter:
     sdk: flutter
   custom_navigation_bar: ^0.8.2
@@ -36,8 +37,6 @@ dependencies:
   flutter_native_splash: ^2.2.19
   ar_flutter_plugin:
   arcore_flutter_plugin: ^0.1.0
-
-
 
 
 
