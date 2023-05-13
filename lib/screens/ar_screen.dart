@@ -6,7 +6,6 @@ import 'package:ar_flutter_plugin/managers/ar_object_manager.dart';
 import 'package:ar_flutter_plugin/managers/ar_session_manager.dart';
 import 'package:ar_flutter_plugin/models/ar_node.dart';
 import 'package:flutter/material.dart';
-import 'package:model_viewer_plus/model_viewer_plus.dart';
 
 
 class ar extends StatefulWidget {
@@ -102,7 +101,7 @@ class _arState extends State<ar> {
     }
     else {
       var newNode = ARNode(
-          type: NodeType.fileSystemAppFolderGLTF2, uri: "assets/dog.gltf");
+          type: NodeType.fileSystemAppFolderGLB, uri: "assets/Shiba Inu dog - standing.glb");
 
       bool? didAddLocalNode = await arObjectManager.addNode(newNode);
       if (didAddLocalNode!) {
@@ -133,4 +132,3 @@ class _arState extends State<ar> {
     }
   }
 }
-
