@@ -5,6 +5,7 @@ import 'package:soothe_space/screens/quiz_screen2.dart';
 import 'package:soothe_space/screens/quiz_screen3.dart';
 
 
+
 class quiz1 extends StatefulWidget {
   const quiz1({Key? key}) : super(key: key);
 

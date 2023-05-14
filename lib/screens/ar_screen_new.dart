@@ -29,7 +29,7 @@ class _ARScreenState extends State<ARScreen> {
     _arCoreController = controller;
     final node = ArCoreReferenceNode(
       name: "my_custom_object",
-      objectUrl: "https://github.com/KhronosGroup/glTF-Sample-Models/raw/master/2.0/Fox/glTF/Fox.gltf", // replace with your own file path
+      objectUrl: "https://github.com/KhronosGroup/glTF-Sample-Models/raw/master/2.0/Duck/glTF/Duck.gltf", // replace with your own file path
       position: vector.Vector3(0, 0, -1), // adjust the position as needed
     );
     _arCoreController.addArCoreNodeWithAnchor(node);
