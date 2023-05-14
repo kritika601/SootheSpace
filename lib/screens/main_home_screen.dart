@@ -19,7 +19,23 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  bool _hasBeenPressed1=false;
+  bool _hasBeenPressed2=false;
+  bool _hasBeenPressed3=false;
+  bool _hasBeenPressed4=false;
+  bool _hasBeenPressed5=false;
+  bool _hasBeenPressed6=false;
+  bool _hasBeenPressed7=false;
+  bool _hasBeenPressed8=false;
+  bool _hasBeenPressed9=false;
+  bool _hasBeenPressed10=false;
+
+
   @override
+
+
+
+
   Widget build(BuildContext context) {
     return Scaffold(
 
@@ -51,11 +67,14 @@ class _HomeState extends State<Home> {
                     left:25,
                     child: ElevatedButton(
                         onPressed: (){
-
+                          setState(() {
+                            _hasBeenPressed1 = !_hasBeenPressed1;
+                          });
                         },
                         style: ElevatedButton.styleFrom(
-                          primary: Color.fromRGBO(191, 186, 255, 100),
+                          primary: _hasBeenPressed1 ? Colors.deepPurple : Color.fromRGBO(191, 186, 255, 100),
                         ),
+
                         child: Image(
                           image: AssetImage('assets/buttons/Smiley.png'),
                         )
@@ -68,11 +87,14 @@ class _HomeState extends State<Home> {
                       top:150,
                       left: 110,
                       child: ElevatedButton(
-                        onPressed: (){
-                        },
-                        style: ElevatedButton.styleFrom(
-                          primary: Color.fromRGBO(191, 186, 255, 100),
-                        ),
+                          onPressed: (){
+                            setState(() {
+                              _hasBeenPressed2 = !_hasBeenPressed2;
+                            });
+                          },
+                          style: ElevatedButton.styleFrom(
+                            primary: _hasBeenPressed2 ? Colors.deepPurple : Color.fromRGBO(191, 186, 255, 100),
+                          ),
                         child:Image(
                           image: AssetImage('assets/buttons/SmileyMeh (1).png' ),
                         )
@@ -85,11 +107,14 @@ class _HomeState extends State<Home> {
                       top:150,
                       left: 190,
                       child: ElevatedButton(
-                        onPressed: (){
-                        },
-                        style: ElevatedButton.styleFrom(
-                          primary: Color.fromRGBO(191, 186, 255, 100),
-                        ),
+                          onPressed: (){
+                            setState(() {
+                              _hasBeenPressed3 = !_hasBeenPressed3;
+                            });
+                          },
+                          style: ElevatedButton.styleFrom(
+                            primary: _hasBeenPressed3 ? Colors.deepPurple : Color.fromRGBO(191, 186, 255, 100),
+                          ),
                         child: Image(
                           image: AssetImage('assets/buttons/SmileyNervous.png'),
                         )
@@ -99,11 +124,14 @@ class _HomeState extends State<Home> {
                       top:150,
                       left: 270,
                       child: ElevatedButton(
-                        onPressed: (){
-                        },
-                        style: ElevatedButton.styleFrom(
-                          primary: Color.fromRGBO(191, 186, 255, 100),
-                        ),
+                          onPressed: (){
+                            setState(() {
+                              _hasBeenPressed4 = !_hasBeenPressed4;
+                            });
+                          },
+                          style: ElevatedButton.styleFrom(
+                            primary: _hasBeenPressed4 ? Colors.deepPurple : Color.fromRGBO(191, 186, 255, 100),
+                          ),
                         child: Image(
                           image: AssetImage('assets/buttons/SmileySad.png'),
                         )
@@ -116,9 +144,12 @@ class _HomeState extends State<Home> {
                       left: 25,
                       child: ElevatedButton(
                           onPressed: (){
+                            setState(() {
+                              _hasBeenPressed5 = !_hasBeenPressed5;
+                            });
                           },
                           style: ElevatedButton.styleFrom(
-                            primary: Color.fromRGBO(191, 186, 255, 100),
+                            primary: _hasBeenPressed5 ? Colors.deepPurple : Color.fromRGBO(191, 186, 255, 100),
                             elevation: 3,
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(32),
@@ -139,9 +170,12 @@ class _HomeState extends State<Home> {
                       left: 120,
                       child: ElevatedButton(
                           onPressed: (){
+                            setState(() {
+                              _hasBeenPressed6 = !_hasBeenPressed6;
+                            });
                           },
                           style: ElevatedButton.styleFrom(
-                            primary: Color.fromRGBO(191, 186, 255, 100),
+                            primary: _hasBeenPressed6 ? Colors.deepPurple : Color.fromRGBO(191, 186, 255, 100),
                             elevation: 3,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(32),
@@ -162,9 +196,12 @@ class _HomeState extends State<Home> {
                       left: 200,
                       child: ElevatedButton(
                           onPressed: (){
+                            setState(() {
+                              _hasBeenPressed7 = !_hasBeenPressed7;
+                            });
                           },
                           style: ElevatedButton.styleFrom(
-                            primary: Color.fromRGBO(191, 186, 255, 100),
+                            primary: _hasBeenPressed7 ? Colors.deepPurple : Color.fromRGBO(191, 186, 255, 100),
                             elevation: 3,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(32),
@@ -185,9 +222,12 @@ class _HomeState extends State<Home> {
                       left: 25,
                       child: ElevatedButton(
                           onPressed: (){
+                            setState(() {
+                              _hasBeenPressed8 = !_hasBeenPressed8;
+                            });
                           },
                           style: ElevatedButton.styleFrom(
-                            primary: Color.fromRGBO(191, 186, 255, 100),
+                            primary: _hasBeenPressed8 ? Colors.deepPurple : Color.fromRGBO(191, 186, 255, 100),
                             elevation: 3,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(32),
@@ -208,9 +248,12 @@ class _HomeState extends State<Home> {
                       left: 110,
                       child: ElevatedButton(
                           onPressed: (){
+                            setState(() {
+                              _hasBeenPressed9 = !_hasBeenPressed9;
+                            });
                           },
                           style: ElevatedButton.styleFrom(
-                            primary: Color.fromRGBO(191, 186, 255, 100),
+                            primary: _hasBeenPressed9 ? Colors.deepPurple : Color.fromRGBO(191, 186, 255, 100),
                             elevation: 3,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(32),
@@ -231,9 +274,12 @@ class _HomeState extends State<Home> {
                       left: 215,
                       child: ElevatedButton(
                           onPressed: (){
+                            setState(() {
+                              _hasBeenPressed10 = !_hasBeenPressed10;
+                            });
                           },
                           style: ElevatedButton.styleFrom(
-                            primary: Color.fromRGBO(191, 186, 255, 100),
+                            primary: _hasBeenPressed10 ? Colors.deepPurple : Color.fromRGBO(191, 186, 255, 100),
                             elevation: 3,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(32),
@@ -310,5 +356,7 @@ class _HomeState extends State<Home> {
 
       ),
     );
+
+
   }
 }
