@@ -10,6 +10,17 @@ class quiz2 extends StatefulWidget {
 }
 
 class _quiz2State extends State<quiz2> {
+  bool _hasBeenPressed1=false;
+  bool _hasBeenPressed2=false;
+  bool _hasBeenPressed3=false;
+  bool _hasBeenPressed4=false;
+  bool _hasBeenPressed5=false;
+  bool _hasBeenPressed6=false;
+  bool _hasBeenPressed7=false;
+  bool _hasBeenPressed8=false;
+  bool _hasBeenPressed9=false;
+  bool _hasBeenPressed10=false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -57,9 +68,13 @@ class _quiz2State extends State<quiz2> {
                                 top:60,
                                 right:75,
                                 child: ElevatedButton(
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    setState(() {
+                                      _hasBeenPressed1 = !_hasBeenPressed1;
+                                    });
+                                  },
                                   style: ElevatedButton.styleFrom(
-                                    primary: Color.fromRGBO(191,186,255,100),
+                                    primary: _hasBeenPressed1 ? Colors.deepPurple : Color.fromRGBO(191, 186, 255, 100),
                                     minimumSize: Size(200,40),),
                                   child: Text(
                                     'Rarely',
@@ -75,9 +90,13 @@ class _quiz2State extends State<quiz2> {
                                 top:110,
                                 right:75,
                                 child: ElevatedButton(
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    setState(() {
+                                      _hasBeenPressed2 = !_hasBeenPressed2;
+                                    });
+                                  },
                                   style: ElevatedButton.styleFrom(
-                                    primary: Color.fromRGBO(191,186,255,100),
+                                    primary: _hasBeenPressed2 ? Colors.deepPurple : Color.fromRGBO(191, 186, 255, 100),
                                     minimumSize: Size(200,40),),
                                   child: Text(
                                     'Sometimes',
@@ -92,9 +111,13 @@ class _quiz2State extends State<quiz2> {
                                 top:160,
                                 right:75,
                                 child: ElevatedButton(
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    setState(() {
+                                      _hasBeenPressed3 = !_hasBeenPressed3;
+                                    });
+                                  },
                                   style: ElevatedButton.styleFrom(
-                                    primary: Color.fromRGBO(191,186,255,100),
+                                    primary: _hasBeenPressed3 ? Colors.deepPurple : Color.fromRGBO(191, 186, 255, 100),
                                     minimumSize: Size(200,40),),
                                   child: Text(
                                     'Often',
@@ -109,9 +132,13 @@ class _quiz2State extends State<quiz2> {
                                 top:210,
                                 right:75,
                                 child: ElevatedButton(
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    setState(() {
+                                      _hasBeenPressed4 = !_hasBeenPressed4;
+                                    });
+                                  },
                                   style: ElevatedButton.styleFrom(
-                                    primary: Color.fromRGBO(191,186,255,100),
+                                    primary: _hasBeenPressed4 ? Colors.deepPurple : Color.fromRGBO(191, 186, 255, 100),
                                     minimumSize: Size(200,40),),
                                   child: Text(
                                     'Almost Always',
@@ -134,9 +161,13 @@ class _quiz2State extends State<quiz2> {
                                 top:85,
                                 right:75,
                                 child: ElevatedButton(
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    setState(() {
+                                      _hasBeenPressed5 = !_hasBeenPressed5;
+                                    });
+                                  },
                                   style: ElevatedButton.styleFrom(
-                                    primary: Color.fromRGBO(191,186,255,100),
+                                    primary: _hasBeenPressed5 ? Colors.deepPurple : Color.fromRGBO(191, 186, 255, 100),
                                     minimumSize: Size(200,40),),
                                   child: Text(
                                     'Not at all',
@@ -152,9 +183,13 @@ class _quiz2State extends State<quiz2> {
                                 top:135,
                                 right:75,
                                 child: ElevatedButton(
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    setState(() {
+                                      _hasBeenPressed6 = !_hasBeenPressed6;
+                                    });
+                                  },
                                   style: ElevatedButton.styleFrom(
-                                    primary: Color.fromRGBO(191,186,255,100),
+                                    primary: _hasBeenPressed6 ? Colors.deepPurple : Color.fromRGBO(191, 186, 255, 100),
                                     minimumSize: Size(200,40),),
                                   child: Text(
                                     'Some Days',
@@ -169,9 +204,13 @@ class _quiz2State extends State<quiz2> {
                                 top:185,
                                 right:75,
                                 child: ElevatedButton(
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    setState(() {
+                                      _hasBeenPressed7 = !_hasBeenPressed7;
+                                    });
+                                  },
                                   style: ElevatedButton.styleFrom(
-                                    primary: Color.fromRGBO(191,186,255,100),
+                                    primary: _hasBeenPressed7 ? Colors.deepPurple : Color.fromRGBO(191, 186, 255, 100),
                                     minimumSize: Size(200,40),),
                                   child: Text(
                                     'Almost Everyday',
@@ -186,9 +225,13 @@ class _quiz2State extends State<quiz2> {
                                 top:235,
                                 right:75,
                                 child: ElevatedButton(
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    setState(() {
+                                      _hasBeenPressed8 = !_hasBeenPressed8;
+                                    });
+                                  },
                                   style: ElevatedButton.styleFrom(
-                                    primary: Color.fromRGBO(191,186,255,100),
+                                    primary: _hasBeenPressed8 ? Colors.deepPurple : Color.fromRGBO(191, 186, 255, 100),
                                     minimumSize: Size(200,40),),
                                   child: Text(
                                     'Everyday',
