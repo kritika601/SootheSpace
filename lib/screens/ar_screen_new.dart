@@ -35,33 +35,4 @@ class _ARScreenState extends State<ARScreen> {
     _arCoreController.addArCoreNodeWithAnchor(node);
   }
 
-  // final String objectUrl =
-  //     "https://github.com/KhronosGroup/glTF-Sample-Models/raw/master/2.0/Duck/glTF/Duck.gltf";
-  //
-  //
-  // void _addNode() {
-  //   _node = ArCoreNode(
-  //     shape: ArCoreCube(
-  //       materials: [ArCoreMaterial(color: Colors.red)],
-  //       size: vector.Vector3(0.2, 0.2, 0.2),
-  //     ),
-  //     position: vector.Vector3(0, 0, -1),
-  //   );
-  //   _arCoreController.addArCoreNode(_node);
-  // }
-  //
-  // void _handleOnTap(TapGestureRecognizer tapGestureRecognizer) async {
-  //   final List<HitTestResult> hitTestResults = tapGestureRecognizer as List<HitTestResult>;
-  //
-  //   if (hitTestResults.isNotEmpty) {
-  //     final hit = hitTestResults.first;
-  //     final position= vector.Vector3(0,0,-1);
-  //     final node = ArCoreReferenceNode(
-  //       name: "duck",
-  //       objectUrl: objectUrl,
-  //       position: position,
-  //     );
-  //     _arCoreController.addArCoreNodeWithAnchor(node);
-  //   }
-  // }
 }
